@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="256mm"
+   height="256mm"
+   viewBox="0 0 256.00002 256.00002"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.2 2405546, 2018-03-11"
+   sodipodi:docname="logo.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.13731539"
+     inkscape:cx="-4978.9502"
+     inkscape:cy="-577.53598"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="2560"
+     inkscape:window-height="1012"
+     inkscape:window-x="0"
+     inkscape:window-y="28"
+     inkscape:window-maximized="0"
+     inkscape:pagecheckerboard="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     units="mm" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-24.956616,211.10304)">
+    <path
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Raleway;-inkscape-font-specification:'Raleway weight=255';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5.24676418"
+       d="m 148.10957,-169.22343 v 75.760501 c 0,28.332427 -2.52266,39.248297 -19.94184,39.248297 -11.9626,0 -22.03391,-5.032844 -23.7129,-6.292131 l -8.60799,33.366229 c 6.86945,4.743095 14.91091,7.676494 24.1741,8.751366 l 5.47215,-21.191966 c 1.6786,1.259816 11.75031,6.291962 23.71288,6.291962 17.41936,0 19.94183,-10.915704 19.94183,-39.248274 v -75.760344 h 19.89068 v -20.92564 z m 40.92891,20.92564 v 54.834861 c 0,45.332009 -6.7241,75.555379 -60.87075,75.555379 -2.82511,0 -5.52384,-0.181487 -8.14679,-0.482393 l -3.13585,12.1742212 c 8.81456,6.0862215 19.51881,9.2330686 32.32088,9.2330686 54.14668,0 60.86042,-30.2233708 60.86042,-75.5554858 v -75.760351 z"
+       id="flowRoot815"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

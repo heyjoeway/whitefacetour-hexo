@@ -1,0 +1,15 @@
+{{#if page.prev_link}}
+{{#if page.next_link}}
+<br>
+<div style="display:flex;justify-content:center">
+    {{#if page.prev_link}}
+    <a href="/{{page.prev_link}}"><  Prev</a>
+    {{/if}}
+    &nbsp;&nbsp;{{page.current}}&nbsp;&nbsp;
+    {{#if page.next_link}}
+<a href="/{{page.next_link}}">Next  ></a>
+{{/if}}
+</div>
+<br>
+{{/if}}
+{{/if}}

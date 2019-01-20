@@ -1,0 +1,14 @@
+<div class="container">
+    <h1>Archive</h1>
+    <hr>
+    {{#each page.posts.data}}
+        <br>
+        <h4 style="display:inline">{{date}}</h4>
+        &nbsp;&nbsp;&nbsp;
+        <h3 style="display:inline"><a href="/{{path}}">{{title}}</a></h3>
+        <br>
+    {{/each}}
+    <br>
+    <hr>
+    {{> paginator}}
+</div>

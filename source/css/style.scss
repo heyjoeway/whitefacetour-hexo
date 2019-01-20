@@ -1,0 +1,223 @@
+$navbar-height: 64px;
+$sidebar-width: 256px;
+
+$sidebar-bg: white;
+$sidebar-fg: black;
+
+$sidebar-link-height: 64px;
+$sidebar-link-padding: 32px;
+
+$sidebar-link-bg: $sidebar-bg;
+$sidebar-link-fg: $sidebar-fg;
+
+$sidebar-link-current-bg: grey;
+$sidebar-link-current-fg: black;
+
+$sidebar-link-hover-bg: lightgrey;
+$sidebar-link-hover-fg: black;
+
+$sidebar-link-press-bg: grey;
+$sidebar-link-press-fg: black;
+
+$link-bg: white;
+$link-fg: #2266FF;
+$link-radius: 8px;
+
+body, html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+    font-weight: 300;
+    font-family: 'Raleway', 'sans-serif';    
+}
+
+p, aside, ul {
+    font-family: "Bitter", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+aside {
+    color: #AA3322;
+    font-weight: bold;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    padding-top: $navbar-height;
+    flex-direction: column;
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 750px;
+    width: 100%;
+    padding: 0 32px 16px;
+}
+
+#sidebar, #navbar {
+    &, & * {
+        user-select: none;
+        -ms-user-select: none;
+    }
+}
+
+#navbar {
+    z-index: 9998;
+
+    transition: box-shadow 0.25s;
+
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    height: $navbar-height;
+    
+    box-shadow: 0 0 16px 16px rgba(0,0,0,0);
+    
+    #navbar-cont {
+        overflow: hidden;
+        transition: background 0.25s, backdrop-filter 0.25s;
+
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+
+        background: rgba(255, 255, 255, 0);
+        backdrop-filter: blur(0px);
+
+        #navbar-menu {
+            height: $navbar-height;
+            width: $navbar-height;
+            display: inline-block;
+        }
+    
+        #navbar-title {
+            display: inline-block;
+            height: $navbar-height;
+            line-height: $navbar-height;
+            vertical-align: top;
+        }
+    }
+
+    &.over {
+        #navbar-cont {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(8px);
+        }
+
+        box-shadow: 0 0 16px 8px rgba(0,0,0,0.1);
+    }
+}
+
+#sidebar {
+    z-index: 9999;
+
+    transition: left 0.25s, box-shadow 0.25s;
+
+    position: fixed;
+    top: 0;
+    left: -$sidebar-width;
+    width: $sidebar-width;
+    height: 100vh;
+
+    background: white;
+
+    box-shadow: 0 0 16px 8px rgba(0,0,0,0);
+    
+    &.open {
+        box-shadow: 0 0 16px 8px rgba(0,0,0,0.25);
+        left: 0;
+    }
+
+    a {
+        transition-property: background, color;
+        transition-duration: 0.2s;
+
+        display: block;
+        width: $sidebar-width - $sidebar-link-padding;
+        height: $sidebar-link-height;
+
+        padding-left: $sidebar-link-padding;
+        line-height: $sidebar-link-height;
+
+        text-decoration: none;
+
+        background: $sidebar-link-bg;
+        color: $sidebar-link-fg;
+
+        &.current {
+            background: $sidebar-link-current-bg;
+            color: $sidebar-link-current-fg;
+        }
+
+        &:hover {
+            background: $sidebar-link-hover-bg;
+            color: $sidebar-link-hover-fg;
+        }
+
+        &:active {
+            background: $sidebar-link-press-bg;
+            color: $sidebar-link-press-fg;
+        }
+    }
+
+    #sidebar-logo {
+        width: 256px;
+        height: 256px;
+    }
+}
+
+hr {
+    border-style: dotted;
+    border-width: 4px;
+    border-color: lightgray;
+    border-top: none;
+}
+
+a {
+    color: $link-fg;
+    text-decoration: none;
+}
+
+btn > a {
+    text-transform: uppercase;
+
+    font-family: 'Raleway', 'sans-serif';
+
+    display: inline-block;
+
+    background: $link-fg;
+    color: $link-bg;
+
+    padding: 0 16px;
+    height: 36px;
+    line-height: 36px;
+
+    margin: 0 2px 8px 0;
+    border-radius: 4px;
+
+    box-shadow: 0 4px 4px 0px rgba(0,0,0,0.25);
+}
+
+h1, h2, h3 {
+    font-family: 'Raleway', 'sans-serif';
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 800;
+}
+h2 {
+    font-size: 30px;
+    margin-bottom: 0px;
+    font-weight: 700;
+}
+h3 {
+    margin-top: 8px;
+    font-weight: 600;
+}
+

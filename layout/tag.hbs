@@ -1,0 +1,12 @@
+<div class="container">
+    <h1>#{{page.tag}}</h1>
+    <h2>Tag</h2>
+    <hr>
+    {{#each page.posts.data}}
+        <h2><a href="/{{path}}">{{title}}</a></h2>
+        <h4>{{date}}</h4>
+        {{{excerpt}}}
+        <hr>
+    {{/each}}
+    {{> paginator}}
+</div>

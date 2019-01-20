@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <title>{{#if page.title}}{{page.title}} - {{/if}}{{config.title}}</title>
+    {{#page.__index}}
+    <meta name="description" content="{{config.description}}">
+    {{/page.__index}}
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter:400,400i,700" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
+</head>
+<body class="page-layout-{{page.layout}} page-path-{{page.path}} page-id-{{page._id}}">
+    <div id="navbar">
+        <div id="navbar-cont">
+            <svg id="navbar-menu">
+                <use xlink:href="/img/menu.svg#layer1"></use>
+            </svg>
+            <span id="navbar-title">{{config.title}}</span>
+        </div>
+    </div>
+
+    <div id="sidebar">
+        <nav id="sidebar-nav">
+            <svg id="sidebar-logo">
+                <use xlink:href="/img/logo.svg#layer1"></use>
+            </svg>
+            {{#each theme.menu}}
+                <a class="sidebar-nav-link" href="{{this}}">{{@key}}</a>
+            {{/each}}
+        </nav>
+    </div>
+
+    {{{body}}}
+</body>

@@ -90,6 +90,7 @@ body {
         backdrop-filter: blur(0px);
 
         #navbar-menu {
+            cursor: pointer;
             height: $navbar-height;
             width: $navbar-height;
             display: inline-block;
@@ -221,3 +222,18 @@ h3 {
     font-weight: 600;
 }
 
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    img {
+        width: 215px;
+        border: 2px lightgrey solid;
+    }
+
+    br {
+        display: none;
+    }
+}

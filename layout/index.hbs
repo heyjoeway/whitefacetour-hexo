@@ -32,11 +32,6 @@
 <div class="container">
     <h1>Recent Posts</h1>
     <hr>
-    {{#each page.posts.data}}
-        <h2><a href="/{{path}}">{{title}}</a></h2>
-        <h4>{{date}}</h4>
-        {{{excerpt}}}
-        <hr>
-    {{/each}}
+    {{> posts}}
     {{> paginator}}
 </div>

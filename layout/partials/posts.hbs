@@ -1,0 +1,11 @@
+{{#each page.posts.data}}
+    <h2><a href="/{{path}}">{{title}}</a></h2>
+    <h3>{{subtitle}}</h3>
+    <h4>{{date}}</h4>
+    {{#if excerpt}}
+    {{{excerpt}}}
+    <br>
+    <a href="/{{path}}">Read More</a>
+    {{/if}}
+    <hr>
+{{/each}}

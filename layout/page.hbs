@@ -1,3 +1,9 @@
 <div class="container">
+    <h1>{{page.title}}</h1>
+    {{#if page.subtitle}}
+    <h2>{{page.subtitle}}</h2>
+    <br>
+    {{/if}}
+    <hr>
     {{{page.content}}}
 </div>

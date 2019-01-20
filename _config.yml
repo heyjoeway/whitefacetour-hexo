@@ -2,9 +2,10 @@
 menu:
   Home: /
   Works: /Works
+  Art: /categories/Art
+  Archive: /archives
   Employment: /Employment
   Contact: /Contact
-  Archives: /archives
 rss: /atom.xml
 
 # display widgets at the bottom of index pages (pagination == 2)

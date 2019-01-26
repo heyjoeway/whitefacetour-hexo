@@ -249,7 +249,7 @@ h3 {
     opacity: 1;
     transition: opacity 0.5s;
 
-    overflow: scroll;
+    overflow: auto;
     
     & > div {
         max-width: 550px;

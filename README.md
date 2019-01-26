@@ -1,2 +1,2 @@
-# jojudge-hexo
-My Hexo theme for my portfolio site.
+# whitefacetour-hexo
+Hexo theme for whitefacetour.app.
